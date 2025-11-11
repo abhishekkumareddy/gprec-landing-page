@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPREC — G. Pulla Reddy Engineering College</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS (subtle scroll effects) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom -->
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="GPREC — An Autonomous Institution. Admissions, Departments, Events, and Contact information."/>
+</head>
+<body>
+  <!-- Minimal sticky nav -->
+  <header class="navbar navbar-expand-lg nav-blur fixed-top px-3">
+    <a class="navbar-brand fw-semibold" href="#hero">GPREC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <button id="themeToggle" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+            <span class="theme-light">Dark</span>
+            <span class="theme-dark">Light</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-3 fw-bold lh-1 mb-3" data-aos="fade-up">Empowering Innovation Through Education.</h1>
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+        G. Pulla Reddy Engineering College — Autonomous. Affiliated to JNTUA. NAAC & NBA Accredited.
+      </p>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <a href="#departments" class="btn btn-gt-primary btn-lg rounded-pill me-2">Explore Programs</a>
+        <a href="#contact" class="btn btn-outline-gt btn-lg rounded-pill">Admissions 2025</a>
+      </div>
+      <div class="hero-image mt-5" data-aos="zoom-in" data-aos-delay="250" aria-hidden="true">
+        <!-- Replace this image with your own campus banner: /assets/images/gprec-hero.jpg -->
+        <img src="assets/images/gpreccampus.jpeg" alt="GPREC Campus" class="img-fluid rounded-4 shadow-0" />
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section id="departments" class="section-xl container">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-semibold" data-aos="fade-up">Departments</h2>
+      <p class="text-secondary-emphasis" data-aos="fade-up" data-aos-delay="100">Cutting‑edge curricula, industry projects, and research culture.</p>
+    </div>
+
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h3 class="fw-semibold mb-2">Computer Science & Engineering (CSE)</h3>
+        <p class="text-secondary-emphasis">AI/ML, Systems, Full‑stack, and Cloud. Hackathons, labs, and innovation cells.</p>
+        <a href="#contact" class="link-cta">Know more →</a>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <img class="img-fluid rounded-4" src="assets/images/cse.jpg" alt="CSE Lab" />
+      </div>
+    </div>
+
+    <hr class="my-6" />
+
+    <div class="row align-items-center gy-5 flex-lg-row-reverse">
+      <div class="col-lg-6" data-aos="fade-left">
+        <h3 class="fw-semibold mb-2">Electronics & Communication (ECE)</h3>
+        <p class="text-secondary-emphasis">VLSI, Embedded, 5G & IoT. Centers of Excellence and hands‑on projects.</p>
+        <a href="#contact" class="link-cta">Know more →</a>
+      </div>
+      <div class="col-lg-6" data-aos="fade-right">
+        <img class="img-fluid rounded-4" src="assets/images/ece.jpg" alt="ECE Lab" />
+      </div>
+    </div>
+
+    <hr class="my-6" />
+
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h3 class="fw-semibold mb-2">Electrical & Electronics (EEE)</h3>
+        <p class="text-secondary-emphasis">Power systems, drives, renewables. Industry‑ready lab infrastructure.</p>
+        <a href="#contact" class="link-cta">Know more →</a>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <img class="img-fluid rounded-4" src="assets/images/eee.jpg" alt="EEE Lab" />
+      </div>
+    </div>
+
+    <hr class="my-6" />
+
+    <div class="row align-items-center gy-5 flex-lg-row-reverse">
+      <div class="col-lg-6" data-aos="fade-left">
+        <h3 class="fw-semibold mb-2">Civil & Mechanical</h3>
+        <p class="text-secondary-emphasis">Structures, CAD/CAM, Manufacturing, and Smart Materials.</p>
+        <a href="#contact" class="link-cta">Know more →</a>
+      </div>
+      <div class="col-lg-6" data-aos="fade-right">
+        <img class="img-fluid rounded-4" src="assets/images/mec.jpg" alt="Civil and Mechanical Labs" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section id="highlights" class="section-lg bg-quiet">
+    <div class="container">
+      <h3 class="display-6 fw-semibold text-center mb-5" data-aos="fade-up">Campus Highlights</h3>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col" data-aos="fade-up">
+          <div class="feature p-4 rounded-4 h-100">
+            <h5 class="mb-2">Placements</h5>
+            <p class="mb-0 text-secondary-emphasis">Top recruiters, training, and career guidance.</p>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature p-4 rounded-4 h-100">
+            <h5 class="mb-2">Research</h5>
+            <p class="mb-0 text-secondary-emphasis">Funded projects, labs, and publications.</p>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature p-4 rounded-4 h-100">
+            <h5 class="mb-2">Infrastructure</h5>
+            <p class="mb-0 text-secondary-emphasis">Modern classrooms, labs, and library.</p>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature p-4 rounded-4 h-100">
+            <h5 class="mb-2">Student Life</h5>
+            <p class="mb-0 text-secondary-emphasis">Clubs, fests, sports, and community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="section-lg container">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <h3 class="fw-semibold display-6">Events & Achievements</h3>
+      <a href="#contact" class="link-cta">See all →</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" data-aos="fade-up">
+        <div class="card border-0 rounded-4 overflow-hidden h-100 feature">
+          <img src="assets/images/event1.jpg" class="card-img-top" alt="Tech Fest">
+          <div class="card-body">
+            <h5 class="card-title mb-2">Hackathon Winners</h5>
+            <p class="card-text text-secondary-emphasis">Students secured top prizes in state‑level hackathons.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 rounded-4 overflow-hidden h-100 feature">
+          <img src="assets/images/evevt2.jpeg" class="card-img-top" alt="Seminar">
+          <div class="card-body">
+            <h5 class="card-title mb-2">Industry Talks</h5>
+            <p class="card-text text-secondary-emphasis">Leaders from top tech firms deliver guest lectures.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="card border-0 rounded-4 overflow-hidden h-100 feature">
+          <img src="assets/images/event3.jpeg" class="card-img-top" alt="Achievement">
+          <div class="card-body">
+            <h5 class="card-title mb-2">Research Grants</h5>
+            <p class="card-text text-secondary-emphasis">Faculty & students awarded competitive research grants.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-lg container-sm" style="max-width: 900px">
+    <div class="text-center mb-4" data-aos="fade-up">
+      <h3 class="fw-semibold display-6 mb-2">Contact & Admissions</h3>
+      <p class="text-secondary-emphasis">Have questions? Write to us — we’ll respond within one business day.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" class="card border-0 p-4 rounded-4 feature" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control form-control-lg" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control form-control-lg" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea name="message" rows="5" class="form-control form-control-lg" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gt-primary btn-lg rounded-pill w-100">Send</button>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+        </form>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card border-0 rounded-4 feature overflow-hidden">
+          <!-- Replace the map src with your official location link if needed -->
+          <iframe
+            src="https://www.google.com/maps?q=GPREC%20Kurnool&output=embed"
+            height="420" style="border:0;width:100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="GPREC Location"></iframe>
+          <div class="p-4">
+            <h6 class="mb-1">Address</h6>
+            <p class="mb-2 small text-secondary-emphasis">Kurnool, Andhra Pradesh, India</p>
+            <h6 class="mb-1">Email</h6>
+            <p class="mb-0 small text-secondary-emphasis">info@gprec.ac.in</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center py-5">
+    <div class="container small text-secondary-emphasis">
+      © 2025 GPREC — G. Pulla Reddy Engineering College. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
